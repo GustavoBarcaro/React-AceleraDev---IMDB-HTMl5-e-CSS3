@@ -1,0 +1,290 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background-attachment: fixed;
+    background-image: url(../img/capa-madmax2.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	padding: 25px;
+	width: 100%;
+	height: 850px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column; 
+}
+nav {
+	z-index: 100;
+}
+nav > div{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 1100px;
+}
+
+.nav-links {
+	display: flex;
+}
+.nav-links li {
+	margin: 0 20px;
+	list-style: none;
+}
+.nav-links li a {
+	color:  white;
+	text-decoration: none;
+	font-weight: bold;
+}
+.nav-links li a:hover{
+	color:#e4bb23
+}
+.user-info img {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	box-shadow: 0px 5px 5px 0px;
+}
+.user-info{
+	display: flex;
+}
+.user-info p{
+	color: white;
+	font-weight: bold;
+	margin: auto 20px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.footer-ul {
+	display: flex;
+	
+}
+.footer-ul > li {
+	margin:  0  20px;
+	font-size: 25px;
+
+}
+.footer-conteiner {
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	vertical-align: middle;
+}
+footer {
+	display: flex;
+	padding: 25px;
+	flex-direction: column;
+	align-items: center;
+	left:0;
+	bottom: 0;
+	background-color: white
+}
+
+.footer-conteiner > img{
+	height: 50px;
+	margin: 5.5px 0;
+}
+
+.icone-twitter a {
+	color: black;
+}
+
+.icone-facebook a{
+	color:black;
+}
+.icone-instagram a{
+	color: black;
+}
+
+.icone-twitter a:hover{
+	color: royalblue;
+}
+
+.icone-facebook a:hover {
+	color: blue;
+}
+
+.icone-instagram a:hover {
+	color:orange;
+}
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	left:0;
+	bottom: 0;
+	background-color: #e4e4eb;
+}
+.section-container {
+	width: 1080px;
+	display: flex;
+	flex-direction: column;
+	vertical-align: middle;
+	margin-bottom: 50px;
+}
+
+.section-ul{
+	display: flex;
+	justify-content: space-evenly;
+}
+.section-ul > li > a {
+	text-decoration: none;
+	font-weight: bold;
+	color:#e4bb23;
+}
+
+.section-ul > li > a:hover {
+	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+.movie-card {
+	width: 250px;
+	margin: 10px 10px;
+	background-color: white;
+	border-radius: 8px;
+}
+
+.card-img > img {
+	width: 200px;
+	width: 250px;
+	border-radius: 8px 8px 0px 0px;
+}
+.card-img {
+	/* padding: 1px; */
+}
+
+.movies-cards{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+}
+
+.card-info {
+	padding: 10px;
+}
+.card-info a{
+	font-size: 13px;
+	color:#e4bb23;
+	text-decoration: none;
+}
+
+.card-info a:hover {
+	text-decoration: underline;
+}
+
+.card-info p {
+	font-weight: bold;
+
+}
+.card-line{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.card-line i{
+	color: #ccccccaa;
+	font-size: 25px;
+}
+.card-line span{
+	font-size: 25px;
+}
+.card-line i:hover{
+	color:red
+}
+
+.poster-movie {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	color:#e4bb23;
+	position: absolute;
+	visibility: hidden;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.movie-card:hover .poster-movie{
+	visibility: visible;
+	border-radius: 8px 8px 0px 0px;
+}
+.poster-movie i{
+	color: white;
+	font-size: 40px;
+}
+
+.poster-movie i:hover{
+	color:#e4bb23;
+	cursor: pointer;
+}
+
+.header-title {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	width: 1100px;
+	margin: 0 auto;;
+	z-index: 200;
+}
+.header-title h2{
+	font-size: 70px;
+}
+.header-btn{
+	margin: 0;
+	padding: 15px 30px;
+	background-color: #e4bb23;
+	width: 190px;
+	position: relative;
+	border-radius: 50px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header-btn i{
+	font-size: 20px;
+}
+
+.header-btn:hover {
+	background-color: #e4bb23dd;
+}
+
+.header-infos p:last-child {
+	color: #e4bb23;
+}
+.header-title-links {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+}
+.header-title-links > a{
+	text-decoration: none;
+	color: white;
+	font-size: 13px;
+
+}
+.header-title-links > a:hover {
+	color:#e4bb23
+}
+.backdrop {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
+}
